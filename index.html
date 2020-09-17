@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0&appId=261156894973932&autoLogAppEvents=1" nonce="XnT3188v"></script>
+	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -380,41 +382,16 @@
         </div>
         <div class="row justify-content-center">
         	<div class="col-md-7">
-        		<form action="#" class="rsvp-form ftco-animate">
-	    				<div class="">
-		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Name">
-		    				</div>
-		    				<div class="form-group">
-		    					<input type="text" class="form-control" placeholder="Your email">
-		    				</div>
-	    				</div>
-	    				<div class="">
-	    					<div class="form-group">
-		    					<div class="form-field">
-          					<div class="select-wrap">
-                      <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
-                      	<option value="">Guest</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                      </select>
-                    </div>
-		              </div>
-		    				</div>
-	    				</div>
-	    				<div class="">
-	    					<div class="form-group">
-		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-		            </div>
-		            <div class="form-group">
-		              <input type="submit" value="I am attending" class="btn btn-primary py-3 px-4">
-		            </div>
-	    				</div>
-	    			</form>
+        		<form action="https://send.pageclip.co/lc4gAbsEwmt4HCHu08SHqd3GAWunchKT" class="pageclip-form" method="post">
+					<!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+					<input type="text" name="name" value="Roscoe Jones" />
+					<input type="email" name="email" value="roscoe@example.com" />
+
+					<!-- This button will have a loading spinner. Keep the inner span for best results. -->
+					<button type="submit" class="pageclip-form__submit">
+						<span>Send</span>
+					</button>
+				</form>
         	</div>
         </div>
     	</div>
